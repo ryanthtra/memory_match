@@ -12,6 +12,28 @@ body
     background-attachment: fixed;
 }
 
+#settings-modal
+{
+    font-family: korataki;
+    color: white;
+}
+
+.modal-header, .modal-body, .modal-footer
+{
+    background-color: rgba(3, 95, 145, .8);
+}
+
+.modal-footer>button
+{
+    width: 14vw;
+    /*height: 2vw;*/
+    font-family: korataki;
+    /*font-size: 0.8vw;*/
+    color: white;
+    background-color: rgba(3, 95, 145, .5);
+    text-align: center;
+}
+
 div.page-wrapper
 {
     /*border: 1px solid white;*/
@@ -55,6 +77,11 @@ div.anim-quake
     display: inline-block;
 }
 
+.header>div
+{
+    display: inline-block;
+}
+
 .header>#logo
 {
     margin-left: 1%;
@@ -83,6 +110,8 @@ div.anim-quake
 .header>#menu
 {
     text-align: center;
+    float: right;
+    width: 74%;
 }
 
 .header>#menu>nav>ul
@@ -93,10 +122,12 @@ div.anim-quake
 .header>#menu>nav>ul>li
 {
     display: inline-block;
+    margin: auto 3vw;
     width: 33%;
 }
 
-.header>#menu>nav>ul>li>a
+.header>#menu>nav>ul>li>a,
+.header>#menu>nav>ul>li>button
 {
     text-decoration: none;
     color: white;
@@ -136,18 +167,29 @@ div.anim-quake
     font-family: korataki;
     font-size: 0.8vw;
     color: white;
-    background-color: rgba(3, 95, 145, .5);;
+    background-color: rgba(3, 95, 145, .5);
+    text-align: center;
+}
+
+#game-container
+{
+    position: relative;
+    float: right;
+    top: 18vh;
+    width: 60vw;
+    height: 40vw;
 }
 
 #game-area
 {
     /*border: 1px solid green;*/
     position: relative;
-    top: 18vh;
-    right: 6.5vw;
-    float: right;
+    /*top: 18vh;*/
+    /*right: 4.5vw;*/
+    /*float: right;*/
     width: 52vw;
     height: 36vw;
+    margin: 0 auto;
 }
 
 div.card
@@ -190,16 +232,16 @@ div.card>span.back
     transition-duration: .4s;
     z-index: 200;
     position: absolute;
-    width: inherit;
-    height: inherit;
+    max-width: 100%;
+    max-height: 100%;
     transform-origin: 50% 50%;
     backface-visibility: hidden;
 }
 
 div.card>span.back>img
 {
-    width: inherit;
-    height: inherit;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 div.card>span.front
@@ -207,8 +249,8 @@ div.card>span.front
     transition-duration: .4s;
     z-index: 100;
     position: absolute;
-    width: inherit;
-    height: inherit;
+    max-width: 100%;
+    max-height: 100%;
     transform-origin: 50% 50%;
     transform: rotateY(180deg);
 
@@ -218,8 +260,8 @@ div.card>span.front
 
 div.card>span.front>img
 {
-    width: inherit;
-    height: inherit;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* Rotation animation */
