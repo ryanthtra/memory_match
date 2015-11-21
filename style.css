@@ -126,6 +126,7 @@ div.anim-quake
     width: 33%;
 }
 
+.header>#menu>nav>ul>li>button>a,
 .header>#menu>nav>ul>li>a,
 .header>#menu>nav>ul>li>button
 {

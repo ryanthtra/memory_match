@@ -27,11 +27,12 @@
     {
         position: relative;
         text-align: center;
-        bottom: 2vh;
         width: 71%;
     }
 
-    .header>#menu>nav>ul>li>a
+    .header>#menu>nav>ul>li>button>a,
+    .header>#menu>nav>ul>li>a,
+    .header>#menu>nav>ul>li>button
     {
         font-size: 3vw;
     }
