@@ -101,4 +101,9 @@
         width: 90vw;
         height: 180vw;
     }
+
+    .modal-footer>button
+    {
+        width: 25vw;
+    }
 }
