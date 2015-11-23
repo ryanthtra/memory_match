@@ -13,6 +13,11 @@ function getRandomSize()
     return SIZE_ARRAY[rand_index];
 }
 
+function isPortrait()
+{
+    return (screen.height >= screen.width);
+}
+
 var game_ref;
 var cm_ref;
 var sm_ref;
