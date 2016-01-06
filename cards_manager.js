@@ -239,11 +239,13 @@ CardsManager.prototype.rotateCard = function(card)
     if (card == null)
         console.log("Trying to rotate a NULL card!!!");
 
-    var back_card = $(card).find("span.back");
-    back_card.toggleClass("rotate-card-hide");
+    //var back_card = $(card).find("span.back");
+    //back_card.toggleClass("rotate-card-hide");
 
-    var front_card = $(card).find("span.front");
-    front_card.toggleClass("rotate-card-show");
+    //var front_card = $(card).find("span.front");
+    //front_card.toggleClass("rotate-card-show");
+
+    $(card).toggleClass('rotate-card');
 };
 
 CardsManager.prototype.shakeSingleCard = function(card)
