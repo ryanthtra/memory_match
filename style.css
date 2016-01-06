@@ -191,16 +191,20 @@ div.anim-quake
     width: 52vw;
     height: 36vw;
     margin: 0 auto;
+    perspective: 1000px;
 }
 
 div.card
 {
+    transition-duration: .6s;
+    transform-origin: 50% 50%;
     position: relative;
     width: 7.857vw;
     height: 11vw;
     display: inline-block;
     margin: .5vw .4vw;
-    float: left;
+    float: left;    
+    transform-style: preserve-3d;
 }
 
 div.make-disappear
@@ -230,7 +234,6 @@ div.anim-shake
 
 div.card>span.back
 {
-    transition-duration: .4s;
     z-index: 200;
     position: absolute;
     max-width: 100%;
@@ -247,7 +250,6 @@ div.card>span.back>img
 
 div.card>span.front
 {
-    transition-duration: .4s;
     z-index: 100;
     position: absolute;
     max-width: 100%;
@@ -281,6 +283,7 @@ div.card:hover>span.front
     transform-origin: 50% 50%;
     transform: rotateY(360deg);
 }*/
+
 div.card>span.rotate-card-hide
 {
     transition-duration: .8s;
@@ -294,6 +297,14 @@ div.card>span.rotate-card-show
     transition-duration: .8s;
     transform-origin: 50% 50%;
     transform: rotateY(0deg);
+}
+
+.rotate-card
+{
+    transition-duration: .6s;
+    z-index: 90;
+    transform-origin: 50% 50%;
+    transform: rotateY(-180deg);
 }
 
 /*END index.html STYLING*/
