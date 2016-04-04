@@ -14,7 +14,8 @@ The original MVP requirements for this project were to create an 18-card game of
 - Event-handling (e.g., when a card is clicked, when the page is loaded, etc.)
 - Hiding elements until they are needed to be shown.
 
-### Features added to the project since the MVP include:
+### Features added to the project since the MVP include: 
+>
 - Randomly arranged cards.
 - Completely re-factored JavaScript code to an object-oriented design.
 - Object-oriented state machine controlling the game flow.
